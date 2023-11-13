@@ -15,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 footer{
   color: #FFF;
   text-align: center;
@@ -175,8 +176,39 @@ footer{
     color: #FFF;
     font-weight: bold;
   } 
+  .close-menu:checked~#home div img{
+    display: none;
+  }
 }
 
+.animation{
+  width: 17ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(17), blinking 0.9s infinite step-end alternate;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+}
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+.pisca {
+  -webkit-animation: piscando .9s linear infinite;
+  -moz-animation: piscando .9s linear infinite;
+  -ms-animation: piscando .9s linear infinite;
+  -o-animation: piscando .9s linear infinite;
+  animation: piscando .9s linear infinite;
+}
+@keyframes piscando {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
 
 #home{
   display: flex;
@@ -191,8 +223,13 @@ footer{
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  animation: flutuante 1.5s  infinite;
 }
-
+@keyframes flutuante {
+  50% {
+    transform: translateY(-2%);
+  }
+}
 #home h1{
   font-size: 50px;
   font-weight: bold;
@@ -281,7 +318,7 @@ footer{
   justify-content: center;
 }
 #projetos div img {
-  width: 300px;
+  width: 200px;
 }
 #projetos a{
   margin-bottom: 20px;

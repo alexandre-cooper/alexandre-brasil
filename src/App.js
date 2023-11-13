@@ -1,6 +1,6 @@
 import React from "react";
 import perfil from './assets/alexandre.jpg';
-import estudoSobre from './assets/coach-online.png';
+import estudoSobre from './assets/notebook.svg';
 import modelo from './assets/modelo.png';
 import shopfy from '../src/assets/shopify.svg';
 import cv from '../src/CV/alexandre-cv.pdf';
@@ -56,11 +56,11 @@ export default function App(){
 
 
       <section id="home">
-        <div>
+        <div style={{display:"flex", flexDirection: "column", alignItems: "center"}}>
           <img className="perfil" src={perfil} />
           <h2>Olá, eu sou</h2>
           <h1>Alexandre Brasil</h1>
-          <h3>Desenvolvedor Web.</h3>
+          <div style={{display:"flex", flexDirection: "row"}}><h3 className="animation">Desenvolvedor Web.</h3> <h3 className="pisca">|</h3> </div>
           <div className="botoes">
             <nav>
               <a href="https://www.linkedin.com/in/alexandre-brasil-dos-santos/" target="_blank">LinkedIn</a>
@@ -91,7 +91,7 @@ export default function App(){
           <br/>
           
           </div>
-          <img src={estudoSobre}/>
+          <img  width={400} src={estudoSobre}/>
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default function App(){
       
             <h2>Phone Repair</h2>
             <img className="modelo" src={modelo} />
-            <a href="http://www.phonerepair.com.br" target="blank">Conferir <BsFillArrowRightCircleFill size={20}/> </a>
+            <a href="http://lotuspiscinas.netlify.app" target="blank">Conferir <BsFillArrowRightCircleFill size={20}/> </a>
           </div>
           
         

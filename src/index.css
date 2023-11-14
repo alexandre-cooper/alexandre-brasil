@@ -185,7 +185,7 @@ footer{
   width: 17ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1s steps(17), blinking 0.9s infinite step-end alternate;
+  animation: typing 3s steps(17), blinking 0.9s infinite step-end alternate;
 }
 @keyframes typing {
     from {

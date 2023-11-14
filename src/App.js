@@ -1,5 +1,5 @@
 import React from "react";
-import perfil from './assets/alexandre.jpg';
+import perfil from './assets/alexandre-IA.jpg';
 import estudoSobre from './assets/notebook.svg';
 import modelo from './assets/modelo.png';
 import shopfy from '../src/assets/shopify.svg';
